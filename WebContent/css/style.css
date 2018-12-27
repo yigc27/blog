@@ -1,0 +1,136 @@
+@CHARSET "UTF-8";
+
+body{
+	font-family:'メイリオ','sans-serif';
+}
+
+#header{
+	height: 150px;
+	line-height:150px;
+	width : 100%;
+	background-color:#502035;
+	text-align:center;
+}
+
+#header a{
+	text-decoration:none;
+	color:#ffffff;
+}
+
+#header h1{
+	font-weight:normal;
+}
+
+#main{
+	background-color:#E0B0C5;
+	overflow:hidden;
+}
+
+#content{
+	float:left;
+	width:70%;
+	min-height:100%;
+	background-color:#E0B0C5;
+	padding-bottom:32768px;
+	margin-bottom:-32768px;
+}
+
+#menu{
+	float:right;
+	width:30%;
+	min-height:100%;
+	background-color:#E0B0C5;
+	border-left:10px #502035 dotted;
+	box-sizing:border-box;
+	padding:10px;
+	text-align:center;
+	padding-bottom:32768px;
+	margin-bottom:-32768px;
+}
+
+#menu h2{
+	font-weight:normal;
+	font-size:30px;
+}
+
+#menu ul{
+	list-style:none;
+	text-align: left;
+}
+
+#footer{
+	clear:both;
+	margin-top: -50px;
+	height:300px;
+	line-height:125px;
+	width:100%;
+	background-color:#502035;
+	color:#ffffff;
+	text-align:center;
+	height:100px;
+}
+
+.entrie{
+	width: 95%;
+	margin: 10px auto;
+	margin-bottom:50px;
+	border-radius:10px;
+	padding:10px;
+	background-color: #ffffff;
+	word-wrap:break-word;
+}
+
+.entrie .category{
+	font-size:20px;
+	padding-left:10px;
+	padding-right:10px;
+	border:1px solid #805065;
+}
+
+.entrie h2{
+	border-left:5px solid #502035;
+	border-bottom:3px dotted #502035;
+	padding-left:10px;
+	margin-bottom:-2px;
+	margin-top:0px;
+}
+
+.entrie .post_date{
+	border-bottom:1px solid #805065;
+	padding-left:20px;
+}
+.entrie .author{
+	border-top:1px solid #805065;
+	text-align:right;
+	padding-right:20px;
+}
+
+.textsubmit{
+	border: none;
+	background-color: transparent;
+	text-decoration: underline;
+	color: blue;
+	margin:10px;
+	font-size:25px;
+	cursor: pointer;
+}
+
+#page_top{
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+}
+#page_top a{
+  width: 60px;
+  height: 60px;
+  text-decoration: none;
+}
+#page_top a::before{
+  font-family: FontAwesome;
+  content: '\f0aa';
+  font-size: 60px;
+  color: #ef3f40;
+}

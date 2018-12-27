@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.devMode" value="true"/>
+	<package name="com.internousdev.blog.action" extends="struts-default">
+		<action name="IndexAction" class="com.internousdev.blog.action.IndexAction" method="execute">
+			<result name="success">index.jsp</result>
+		</action>
+		<action name="LoginAction" class="com.internousdev.blog.action.LoginAction" method="execute">
+			<result name="success">login.jsp</result>
+		</action>
+		<action name="LoginCompleteAction" class="com.internousdev.blog.action.LoginCompleteAction" method="execute">
+			<result name="success">mypage.jsp</result>
+			<result name="error">login.jsp</result>
+		</action>
+		<action name="LogoutAction" class="com.internousdev.blog.action.LogoutAction" method="execute">
+			<result name="success">start.jsp</result>
+		</action>
+		<action name="NewPostAction" class="com.internousdev.blog.action.NewPostAction" method="execute">
+			<result name="success">editor.jsp</result>
+		</action>
+		<action name="PostAction" class="com.internousdev.blog.action.PostAction" method="execute">
+			<result name="success">editor.jsp</result>
+		</action>
+		<action name="EntrieListAction" class="com.internousdev.blog.action.EntrieListAction" method="execute">
+			<result name="success">entrieList.jsp</result>
+		</action>
+		<action name="EditPostAction" class="com.internousdev.blog.action.EditPostAction" method="execute">
+			<result name="success">editor.jsp</result>
+		</action>
+		<action name="DeleteEntrieAction" class="com.internousdev.blog.action.DeleteEntrieAction" method="execute">
+			<result name="success">entrieList.jsp</result>
+		</action>
+		<action name="CategoryAction" class="com.internousdev.blog.action.CategoryAction" method="execute">
+			<result name="success">category.jsp</result>
+		</action>
+		<action name="DeleteCategoryAction" class="com.internousdev.blog.action.DeleteCategoryAction" method="execute">
+			<result name="success">category.jsp</result>
+		</action>
+		<action name="AddCategoryAction" class="com.internousdev.blog.action.AddCategoryAction" method="execute">
+			<result name="success">category.jsp</result>
+		</action>
+		<action name="CategoryRefineAction" class="com.internousdev.blog.action.CategoryRefineAction" method="execute">
+			<result name="success">index.jsp</result>
+		</action>
+		<action name="UserConfigAction" class="com.internousdev.blog.action.UserConfigAction" method="execute">
+			<result name="success">userConfig.jsp</result>
+		</action>
+		<action name="ChangeNameAction" class="com.internousdev.blog.action.ChangeNameAction" method="execute">
+			<result name="success">changeName.jsp</result>
+		</action>
+		<action name="ChangeNameCompleteAction" class="com.internousdev.blog.action.ChangeNameCompleteAction" method = "execute">
+			<result name="success">changeName.jsp</result>
+		</action>
+		<action name="ChangeLoginIdAction" class="com.internousdev.blog.action.ChangeLoginIdAction" method = "execute">
+			<result name="success">changeLoginId.jsp</result>
+		</action>
+		<action name="ChangeLoginIdCompleteAction" class="com.internousdev.blog.action.ChangeLoginIdCompleteAction" method = "execute">
+			<result name="success">changeLoginId.jsp</result>
+		</action>
+		<action name="ChangeLoginPasswordAction" class="com.internousdev.blog.action.ChangeLoginPasswordAction" method = "execute">
+			<result name="success">changeLoginPassword.jsp</result>
+		</action>
+		<action name="ChangeLoginPasswordCompleteAction" class="com.internousdev.blog.action.ChangeLoginPasswordCompleteAction" method = "execute">
+			<result name = "success">changeLoginPassword.jsp</result>
+		</action>
+		<action name="UserManagementAction" class = "com.internousdev.blog.action.UserManagementAction" method="execute">
+			<result name="success">userManagement.jsp</result>
+		</action>
+		<action name="AddUserAction" class="com.internousdev.blog.action.AddUserAction" method="execute">
+			<result name="success">addUser.jsp</result>
+		</action>
+		<action name="AddUserCompleteAction" class="com.internousdev.blog.action.AddUserCompleteAction" method="execute">
+			<result name="success">addUserComplete.jsp</result>
+			<result name="error">addUser.jsp</result>
+		</action>
+	</package>
+</struts>
